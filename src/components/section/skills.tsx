@@ -39,6 +39,7 @@ const Skills = ({ text }: { text: { skills: { title: string } } }) => {
                     <h3>🍎 iOS</h3>
                     <ul>
                         <li>Swift UI</li>
+                        <li>Alamofire</li>
                     </ul>
                 </div>
 
