@@ -1,6 +1,7 @@
 @use 'pallete' as *;
 
 :root {
+  --Primary-Dark: #{$Blue-20};
   --Primary-Normal: #006fcc;
   --Primary-Alternative: #58a0dd;
   --Primary-Assistive: #97c4e9;

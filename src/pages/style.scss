@@ -25,6 +25,7 @@
     min-height: 100px;
     overflow: hidden;
   }
+
   p {
     @include Display2-SemiBold;
     line-height: 1.6;
@@ -48,6 +49,7 @@
       min-height: 120px;
       overflow: hidden;
     }
+
     .feature-category {
       color: var(--Primary-Normal);
       @include Body-Bold;
@@ -87,4 +89,148 @@
   border-radius: 20px;
   cursor: pointer;
   transition: 0.2s;
+
+  &:hover {
+    background-color: var(--Primary-Dark);
+  }
+}
+
+.skills {
+  padding: 120px 10%;
+  background-color: var(--Background-Alternative);
+  @include flex-center;
+  @include flex-column;
+
+  h2 {
+    @include Title2-Bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .skills-category {
+    background-color: var(--Fill-Neutral);
+    padding: 40px;
+    border-radius: var(--Shape-ExtraSmall);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 250px;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      @include HeadLine1-Bold;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin-top: 5px;
+      @include Body-Medium;
+    }
+  }
+
+}
+
+.design-system {
+  padding: 100px 10%;
+  background-color: var(--Background-Alternative);
+  text-align: center;
+
+  .links-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .btn-link {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background: var(--Primary-Normal);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background: var(--Primary-Dark);
+    }
+  }
+
+}
+
+h2 {
+  @include Title2-Bold;
+  margin-bottom: 40px;
+}
+
+.design-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.color {
+  @include flex-row;
+}
+
+.design-item {
+  width: 45%;
+  padding: 20px;
+  border-radius: var(--Shape-ExtraSmall);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .flex-row {
+    @include flex-row;
+  }
+
+  img {
+    width: 100%;
+    border-radius: var(--Shape-ExtraSmall);
+  }
+}
+
+.github-links {
+  margin-top: 50px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 12px 20px;
+    @include Label-Bold;
+    color: white;
+    background: var(--Primary-Normal);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background: var(--Primary-Dark);
+    }
+  }
 }
