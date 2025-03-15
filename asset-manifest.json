@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FakeTimes-Web/static/css/main.2a502622.css",
-    "main.js": "/FakeTimes-Web/static/js/main.ea07941a.js",
+    "main.js": "/FakeTimes-Web/static/js/main.05a8a1e7.js",
     "static/media/makeNews.mp4": "/FakeTimes-Web/static/media/makeNews.71ba59082caf2ed11137.mp4",
     "static/media/intro-en.png": "/FakeTimes-Web/static/media/intro-en.85b301260768c1ea9fe7.png",
     "static/media/intro-kr.png": "/FakeTimes-Web/static/media/intro-kr.a6bca63bc230cc21ca3f.png",
@@ -12,10 +12,10 @@
     "static/media/Sementic.png": "/FakeTimes-Web/static/media/Sementic.57f64d4cf52ee06fcfb0.png",
     "index.html": "/FakeTimes-Web/index.html",
     "main.2a502622.css.map": "/FakeTimes-Web/static/css/main.2a502622.css.map",
-    "main.ea07941a.js.map": "/FakeTimes-Web/static/js/main.ea07941a.js.map"
+    "main.05a8a1e7.js.map": "/FakeTimes-Web/static/js/main.05a8a1e7.js.map"
   },
   "entrypoints": [
     "static/css/main.2a502622.css",
-    "static/js/main.ea07941a.js"
+    "static/js/main.05a8a1e7.js"
   ]
 }
