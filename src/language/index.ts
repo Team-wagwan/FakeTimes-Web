@@ -61,7 +61,7 @@ export const locales: Record<"ko" | "en", Locale> = {
             etc: "기타 요소"
         },
         skills: {
-            title: "🔧 FakeTimes는 다음 기술로 제작되었습니다!"
+            title: "🔧 FakeTimes는 이 기술들로 개발되었어요!"
         },
         button: "언어 변경 (EN)"
     },
@@ -95,7 +95,7 @@ export const locales: Record<"ko" | "en", Locale> = {
             etc: "Miscellaneous"
         },
         skills: {
-            title: "🔧 FakeTimes was built using these technologies!"
+            title: "🔧 FakeTimes was develop using these technologies!"
         },
         button: "Change Language (KO)"
     }
