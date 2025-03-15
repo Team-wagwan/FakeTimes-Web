@@ -2,7 +2,7 @@
   "name": "FakeTimes",
   "version": "1.0.0",
   "public": true,
-  "homepage": "https://Team-wagwan.github.io/FakeTimes-Web",
+  "homepage": "https://team-wagwan.github.io/FakeTimes-Web",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
