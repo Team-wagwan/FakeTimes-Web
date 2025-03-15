@@ -1,0 +1,40 @@
+@use 'pallete' as *;
+
+:root {
+  --Primary-Normal: #006fcc;
+  --Primary-Alternative: #58a0dd;
+  --Primary-Assistive: #97c4e9;
+
+  --Secondary-Normal: #bfc1c1;
+  --Secondary-Alternative: #d1d4d5;
+  --Secondary-Assistive: #ecfcf1;
+
+  --Label-Normal: #{$Neutral-5};
+  --Label-Strong: #{$Common-100};
+  --Label-Neutral: #{$Neutral-25};
+  --Label-Alternative: #{$Neutral-40};
+  --Label-Assistive: #{$Neutral-50};
+  --Label-Disable: #{$Neutral-97};
+
+  --Line-Normal: #{$Neutral-90};
+  --Line-Neutral: #{$Neutral-95};
+  --Line-Alternative: #{$Neutral-97};
+
+  --Fill-Normal: #{$Neutral-97};
+  --Fill-Neutral: #{$Neutral-95};
+  --Fill-Alternative: #{$Neutral-90};
+  --Fill-Support: #{$Common-00};
+  --Fill-Assistive: #{$Common-00};
+
+  --Background-Normal: #{$Common-00};
+  --Background-Neutral: #{$Neutral-99};
+  --Background-Alternative: #{$Neutral-99};
+
+  --Status-Negative: #{$Red-50};
+  --Status-Cautionary: #{$Yellow-50};
+  --Status-Positive: #{$Green-50};
+  --Status-Info: #{$Blue-50};
+
+  --Static-White: #{$Common-00};
+  --Static-Black: #{$Common-100};
+}
