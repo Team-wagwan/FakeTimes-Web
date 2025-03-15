@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="%PUBLIC_URL%/Symbol.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeTimes</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #0064ff;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 10px 0 20px;
+      color: #555;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      background-color: #0064ff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #0050cc;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>404</h1>
+  <p>페이지를 찾을 수 없습니다.</p>
+  <a href="/" class="home-button">홈으로 돌아가기</a>
+</div>
+
+<script>
+  // GitHub Pages에서 SPA 지원을 위한 리다이렉트 설정
+  var redirect = sessionStorage.redirect;
+  delete sessionStorage.redirect;
+  if (redirect && redirect !== location.href) {
+    history.replaceState(null, null, redirect);
+  }
+</script>
+</body>
+</html>
