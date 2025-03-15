@@ -1,0 +1,19 @@
+@use "../../styles/function/flex" as *;
+@use "../../styles/fonts/typography" as *;
+
+.blinking-arrow {
+  @include Display1-Bold;
+  @include flex-center;
+  color: var(--Label-Assistive);
+  text-align: center;
+  animation: blink 1s infinite alternate;
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+}
