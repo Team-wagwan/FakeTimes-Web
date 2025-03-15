@@ -14,10 +14,10 @@ const DesignSystem = ({ text }: { text: { designSystem: { title: string; colorPa
             <AnimatePresence>
                 {isVisible && (
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.5 }}
+                        exit={{ opacity: 0, y: 30 }}
+                        transition={{ duration: 0.6 }}
                     >
                         {text.designSystem.title}
                     </motion.h2>
@@ -26,9 +26,9 @@ const DesignSystem = ({ text }: { text: { designSystem: { title: string; colorPa
 
             <motion.div
                 className="design-container"
-                initial={{ opacity: 0, y: 20 }}
-                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5 }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.6 }}
             >
                 <div className="design-item">
                     <h3>{text.designSystem.colorPalette}</h3>
@@ -51,8 +51,8 @@ const DesignSystem = ({ text }: { text: { designSystem: { title: string; colorPa
 
             <motion.div
                 className="github-links"
-                initial={{ opacity: 0, y: 10 }}
-                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
                 <a href="https://www.figma.com/design/hab4Kw2goRfcwgPnGJ2a6I/FakeTimes?node-id=0-1&t=QXZgOMlPigVO1C8Z-1"

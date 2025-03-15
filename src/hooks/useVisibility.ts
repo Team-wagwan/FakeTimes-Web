@@ -9,7 +9,7 @@ const useVisibility = () => {
             ([entry]) => {
                 setIsVisible(entry.isIntersecting);
             },
-            { threshold: 0.2 }
+            { threshold: 0.12 }
         );
 
         if (ref.current) observer.observe(ref.current);

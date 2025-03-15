@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { locales } from "../language";
+import { motion, AnimatePresence } from "framer-motion";
 import "./style.scss";
 
 import Intro from "../components/section/intro";
@@ -18,10 +19,20 @@ const Page = () => {
         <main className="main">
             <Language language={language} setLanguage={setLanguage} />
 
-            <Intro language={language} />
-            <Description text={t} />
-            <DesignSystem text={t} />
-            <Skills text={t} />
+            <AnimatePresence mode="wait">
+                <motion.div
+                    key={language}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                >
+                    <Intro language={language} />
+                    <Description text={t} />
+                    <DesignSystem text={t} />
+                    <Skills text={t} />
+                </motion.div>
+            </AnimatePresence>
         </main>
     );
 };

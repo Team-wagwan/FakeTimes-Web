@@ -9,10 +9,10 @@ const Skills = ({ text }: { text: { skills: { title: string } } }) => {
             <AnimatePresence>
                 {isVisible && (
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.5 }}
+                        exit={{ opacity: 0, y: 30 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                     >
                         {text.skills.title}
                     </motion.h2>
@@ -21,9 +21,9 @@ const Skills = ({ text }: { text: { skills: { title: string } } }) => {
 
             <motion.div
                 className="skills-container"
-                initial={{ opacity: 0, y: 20 }}
-                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.5 }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
             >
                 <div className="skills-category">
                     <h3>🌐 Web</h3>
@@ -54,9 +54,9 @@ const Skills = ({ text }: { text: { skills: { title: string } } }) => {
 
             <motion.div
                 className="github-links"
-                initial={{ opacity: 0, y: 10 }}
-                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
             >
                 <a href="https://github.com/Team-wagwan" target="_blank" rel="noopener noreferrer">
                     🔗 GitHub Repository

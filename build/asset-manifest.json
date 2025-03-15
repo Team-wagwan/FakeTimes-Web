@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FakeTimes-Web/static/css/main.f7feb5c9.css",
-    "main.js": "/FakeTimes-Web/static/js/main.78f81aeb.js",
+    "main.js": "/FakeTimes-Web/static/js/main.ead13c0e.js",
     "static/media/intro-en.png": "/FakeTimes-Web/static/media/intro-en.85b301260768c1ea9fe7.png",
     "static/media/intro-kr.png": "/FakeTimes-Web/static/media/intro-kr.a6bca63bc230cc21ca3f.png",
     "static/media/Typography.png": "/FakeTimes-Web/static/media/Typography.da8cb7c5881f052f386f.png",
@@ -10,10 +10,10 @@
     "static/media/Sementic.png": "/FakeTimes-Web/static/media/Sementic.57f64d4cf52ee06fcfb0.png",
     "index.html": "/FakeTimes-Web/index.html",
     "main.f7feb5c9.css.map": "/FakeTimes-Web/static/css/main.f7feb5c9.css.map",
-    "main.78f81aeb.js.map": "/FakeTimes-Web/static/js/main.78f81aeb.js.map"
+    "main.ead13c0e.js.map": "/FakeTimes-Web/static/js/main.ead13c0e.js.map"
   },
   "entrypoints": [
     "static/css/main.f7feb5c9.css",
-    "static/js/main.78f81aeb.js"
+    "static/js/main.ead13c0e.js"
   ]
 }

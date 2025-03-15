@@ -10,10 +10,10 @@ const Description = ({ text }: { text: { intro: string; intro2?: string; intro3?
                 <AnimatePresence>
                     {isVisible && (
                         <motion.p
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -20 }}
-                            transition={{ duration: 0.5 }}
+                            exit={{ opacity: 0, y: 30 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
                         >
                             {text.intro} <br />
                             {text.intro2} <br />

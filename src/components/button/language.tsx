@@ -1,18 +1,30 @@
+import { motion, AnimatePresence } from "framer-motion";
+
 const Language = ({ language, setLanguage }: { language: "ko" | "en"; setLanguage: React.Dispatch<React.SetStateAction<"ko" | "en">> }) => {
     const handleLanguageChange = () => {
         const currentScrollY = window.scrollY;
 
-        setLanguage(language === "ko" ? "en" : "ko");
+        setLanguage((prev) => (prev === "ko" ? "en" : "ko"));
 
         setTimeout(() => {
-            window.scrollTo({ top: currentScrollY, behavior: "auto" });
-        }, 10);
+            window.scrollTo({ top: currentScrollY, behavior: "smooth" });
+        }, 300);
     };
 
     return (
-        <button className="lang-toggle" onClick={handleLanguageChange}>
-            {language === "ko" ? "Change Language (EN)" : "언어 변경 (KO)"}
-        </button>
+        <AnimatePresence mode="wait">
+            <motion.button
+                key={language}
+                className="lang-toggle"
+                onClick={handleLanguageChange}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+            >
+                {language === "ko" ? "Change Language (EN)" : "언어 변경 (KO)"}
+            </motion.button>
+        </AnimatePresence>
     );
 };
 
