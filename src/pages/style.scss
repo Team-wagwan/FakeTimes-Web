@@ -65,15 +65,6 @@
       @include Body-Medium;
     }
   }
-
-  .feature-image {
-    img {
-      width: 400px;
-      height: auto;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-      border-radius: 20px;
-    }
-  }
 }
 
 .lang-toggle {
@@ -262,7 +253,7 @@ h2 {
   width: 45%;
 
   img, video {
-    width: 100%;
+    width: 50%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);

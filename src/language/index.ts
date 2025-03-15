@@ -1,4 +1,4 @@
-interface Feature {
+export interface Feature {
     category: string;
     title: string;
     description1?: string;
@@ -19,7 +19,7 @@ interface Skills {
     title: string;
 }
 
-interface Locale {
+export interface Locale {
     intro: string;
     intro2?: string;
     intro3?: string;
