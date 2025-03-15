@@ -2,8 +2,8 @@
   "name": "FakeTimes",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://qtaghdi.github.io/FakeTimes-web",
   "dependencies": {
-    "@chakra-ui/react": "^3.13.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
@@ -12,7 +12,6 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "axios": "^1.8.3",
     "framer-motion": "^12.5.0",
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
@@ -28,8 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://Githubqtaghdi.github.io/FakeTimes-web"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +48,6 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.34",
     "sass": "^1.85.1"
   }
 }
