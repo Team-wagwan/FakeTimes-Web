@@ -6,6 +6,11 @@
   @include Bold;
 }
 
+@mixin Dislpay1-SemiBold {
+  @include Display1;
+  @include Bold;
+}
+
 @mixin Display1-Medium {
   @include Display1;
   @include Medium;
@@ -20,6 +25,11 @@
 @mixin Display2-Bold {
   @include Display2;
   @include Bold;
+}
+
+@mixin Display2-SemiBold {
+  @include Display2;
+  @include SemiBold;
 }
 
 @mixin Display2-Medium {
@@ -38,6 +48,11 @@
   @include Bold;
 }
 
+@mixin Title1-SemiBold {
+  @include Title1;
+  @include SemiBold;
+}
+
 @mixin Title1-Medium {
   @include Title1;
   @include Medium;
@@ -51,6 +66,11 @@
 @mixin Title2-Bold {
   @include Title2;
   @include Bold;
+}
+
+@mixin Title2-SemiBold {
+  @include Title2;
+  @include SemiBold;
 }
 
 @mixin Title2-Medium {
@@ -69,6 +89,11 @@
   @include Bold;
 }
 
+@mixin HeadLine1-SemiBold {
+  @include HeadLine1;
+  @include SemiBold;
+}
+
 @mixin HeadLine1-Medium {
   @include HeadLine1;
   @include Medium;
@@ -83,6 +108,11 @@
 @mixin HeadLine2-Bold {
   @include HeadLine2;
   @include Bold;
+}
+
+@mixin HeadLine2-SemiBold {
+  @include HeadLine2;
+  @include SemiBold;
 }
 
 @mixin HeadLine2-Medium {
@@ -101,6 +131,11 @@
   @include Bold;
 }
 
+@mixin Body-SemiBold {
+  @include Body;
+  @include SemiBold;
+}
+
 @mixin Body-Medium {
   @include Body;
   @include Medium;
@@ -117,6 +152,11 @@
   @include Bold;
 }
 
+@mixin Label-SemiBold {
+  @include Label;
+  @include SemiBold;
+}
+
 @mixin Label-Medium {
   @include Label;
   @include Medium;
@@ -131,6 +171,11 @@
 @mixin Caption-Bold {
   @include Caption;
   @include Bold;
+}
+
+@mixin Caption-SemiBold {
+  @include Caption;
+  @include SemiBold;
 }
 
 @mixin Caption-Medium {
