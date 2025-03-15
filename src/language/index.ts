@@ -8,6 +8,7 @@ interface Feature {
 
 interface DesignSystem {
     title: string;
+    description: string;
     colorPalette: string;
     semanticColors: string;
     typography: string;
@@ -22,6 +23,7 @@ interface Locale {
     intro: string;
     intro2?: string;
     intro3?: string;
+    featuresTitle: string;
     features: Feature[];
     designSystem: DesignSystem;
     skills: Skills;
@@ -33,6 +35,7 @@ export const locales: Record<"ko" | "en", Locale> = {
         intro: "친구들을 가짜 정보로 골탕먹이고 싶지 않으신가요?",
         intro2: "내가 직접 뉴스를 써보는 건 어떤가요?",
         intro3: "FakeTimes와 함께라면 가능합니다!",
+        featuresTitle: "🚀 주요 기능",
         features: [
             {
                 category: "메인 화면",
@@ -51,6 +54,7 @@ export const locales: Record<"ko" | "en", Locale> = {
         ],
         designSystem: {
             title: "🎨 디자인 시스템",
+            description: "FakeTimes의 디자인 시스템을 확인하세요. 색상, 타이포그래피, UI 요소들이 어떻게 구성되었는지 볼 수 있습니다.",
             colorPalette: "컬러 팔레트",
             semanticColors: "시맨틱 컬러",
             typography: "타이포그래피",
@@ -65,6 +69,7 @@ export const locales: Record<"ko" | "en", Locale> = {
         intro: "Want to prank your friends with fake news?",
         intro2: "How about writing your own news?",
         intro3: "With FakeTimes, it's possible!",
+        featuresTitle: "🚀 Key Features",
         features: [
             {
                 category: "Main Screen",
@@ -83,6 +88,7 @@ export const locales: Record<"ko" | "en", Locale> = {
         ],
         designSystem: {
             title: "🎨 Design System",
+            description: "Check out FakeTimes' design system, including colors, typography, and UI elements.",
             colorPalette: "Color Palette",
             semanticColors: "Semantic Colors",
             typography: "Typography",

@@ -10,6 +10,7 @@ import Description from "../components/section/description";
 import DesignSystem from "../components/section/designSystem";
 import Skills from "../components/section/skills";
 import Language from "../components/button/language";
+import Features from "../components/section/features";
 
 const Page = () => {
     const [language, setLanguage] = useState<"ko" | "en">("ko");
@@ -29,6 +30,7 @@ const Page = () => {
                 >
                     <Intro language={language} />
                     <Description text={t} />
+                    <Features text={t} />
                     <DesignSystem text={t} />
                     <Skills text={t} />
                 </motion.div>
