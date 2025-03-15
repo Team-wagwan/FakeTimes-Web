@@ -45,10 +45,10 @@ export const locales: Record<"ko" | "en", Locale> = {
                 description3: "FakeTimes로 직접 기자가 되어보세요."
             },
             {
-                category: "뉴스 공유",
-                title: "공유도 간편하게!",
-                description1: "AI를 이용해 만든 뉴스를 웹 뷰에서 확인할 수 있어요.",
-                description2: "진짜보다 더 진짜 같은 뉴스 페이지.",
+                category: "뉴스 정리",
+                title: "나는 어떤걸 만들었을까?",
+                description1: "가짜 뉴스를 만들었던걸 리스트를 통해 저장해요",
+                description2: "만약 뉴스가 마음에 들었다면 클릭하여 링크를 복사하여 친구들에게 공유하세요!",
                 description3: "링크를 공유해서 친구들을 속여보세요!"
             }
         ],
@@ -79,11 +79,11 @@ export const locales: Record<"ko" | "en", Locale> = {
                 description3: "Become a journalist with FakeTimes."
             },
             {
-                category: "Share News",
-                title: "Sharing made simple!",
-                description1: "View AI-generated news in a web format.",
-                description2: "A news page that looks even more real than real news.",
-                description3: "Share the link and fool your friends!"
+                "category": "News Summary",
+                "title": "What have I created?",
+                "description1": "Save the fake news you created in a list.",
+                "description2": "If you like a news article, click to copy the link and share it with your friends!",
+                "description3": "Share the link and fool your friends!"
             }
         ],
         designSystem: {
