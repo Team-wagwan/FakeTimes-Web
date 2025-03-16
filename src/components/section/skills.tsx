@@ -63,10 +63,10 @@ const Skills = ({text}: { text: { skills: { title: string } } }) => {
                 <a href="https://github.com/Team-wagwan" target="_blank" rel="noopener noreferrer">
                     🔗 GitHub Organization
                 </a>
-                <a className="AppStore" href="https://github.com/Team-wagwan" target="_blank" rel="noopener noreferrer">
-                    <img src={AppStoreIcon} alt="App Store"/>
-                    <span>App Store</span>
-                </a>
+                {/*<a className="AppStore" href="https://github.com/Team-wagwan" target="_blank" rel="noopener noreferrer">*/}
+                {/*    <img src={AppStoreIcon} alt="App Store"/>*/}
+                {/*    <span>App Store</span>*/}
+                {/*</a>*/}
             </motion.div>
         </section>
     );
